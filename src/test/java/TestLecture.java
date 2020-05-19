@@ -46,4 +46,11 @@ public class TestLecture {
         assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void testIfBooleansWork(){
+        assertTrue("F".equals("F"));
+        boolean var = 1 == 0;
+        assertFalse(var);
+    }
+
 }
