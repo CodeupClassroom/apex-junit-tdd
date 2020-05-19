@@ -23,4 +23,27 @@ public class TestLecture {
 
     }
 
+    @Test
+    public void testIfObjectsAreDifferent() {
+        Object dog = new Object();
+        Object sheep = new Object();
+        System.out.println("dog.toString() = " + dog.toString());
+        System.out.println("sheep.toString() = " + sheep.toString());
+
+        Object clonnedSheep = sheep;
+
+        System.out.println("clonnedSheep.clonnedSheep() = " + clonnedSheep.toString());
+
+        assertNotSame(sheep, dog);
+        assertSame(sheep, clonnedSheep);
+    }
+
+    @Test
+    public void testIfArrayEquals() {
+        char[] expected = {'J','u','n','i','t'};
+        char[] actual = "Junit".toCharArray();
+
+        assertArrayEquals(expected, actual);
+    }
+
 }
