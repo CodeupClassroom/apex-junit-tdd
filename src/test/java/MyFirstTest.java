@@ -30,4 +30,11 @@ public class MyFirstTest {
         assertArrayEquals(numbers, otherNumbers);
     }
 
+    @Test
+    public void testIfWordContains(){
+        String language = "PHP";
+        assertTrue(language.contains("H")); // use assertTrue for this statement
+        assertFalse(language.contains("J")); // use assertFalse for this statement
+    }
+
 }
