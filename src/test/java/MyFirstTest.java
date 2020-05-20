@@ -47,6 +47,12 @@ public class MyFirstTest {
         assertFalse(language.contains("J")); // use assertFalse for this statement
     }
 
+    // We can verify that the names list is not longer null because it was initialized in the setUp() method with the following test:
+    @Test
+    public void testIfNamesIsInitialized(){
+        assertNotNull(names);
+    }
+
     @Test
     public void testIfFerItInTheList(){
         assertEquals("Fer", names.get(0));
