@@ -5,20 +5,26 @@ import static org.junit.Assert.*;
 public class StudentTest {
 
     Student fer;
+    Student douglas;
 
     @Before
     public void init(){
         fer = new Student(1L, "Fer");
+        douglas = new Student(2L, "Douglas");
+
     }
 
     @Test
     public void testIfIdWorks(){
         assertEquals(1L, fer.getId());
+        assertEquals(2L, douglas.getId());
     }
 
     @Test
     public void testIfNameWorks(){
         assertEquals("Fer", fer.getName());
+        assertEquals("Douglas", douglas.getName());
+        assertNotEquals("Fer", douglas.getName());
     }
 
     @Test
