@@ -50,6 +50,9 @@ public class MyFirstTest {
     @Test
     public void testIfFerItInTheList(){
         assertEquals("Fer", names.get(0));
+        assertNotEquals("fer", names.get(0));
+        assertTrue(names.contains("Fer"));
+        assertFalse(names.contains("Douglas"));
     }
 
 }
