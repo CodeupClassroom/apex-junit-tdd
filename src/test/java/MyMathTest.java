@@ -9,4 +9,9 @@ public class MyMathTest {
         assertEquals(5, MyMath.sum(3, 2));
     }
 
+    @Test
+    public void  testIfSubWorks(){
+        assertEquals(7.8, MyMath.sub(10.0, 2.2), 0);
+    }
+
 }
