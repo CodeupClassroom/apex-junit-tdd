@@ -1,8 +1,9 @@
 public class CodeupCrypt {
-    public static String hash = "";
+
+    public static double VERSION;
 
     public static String hashPassword(String aString) {
-        hash = "";
+        String hash = "";
         for (char character : aString.toCharArray()) {
             switch (character){
                 case 'a':
