@@ -28,4 +28,16 @@ public class KitchenTest {
         assertTrue(kitchenWithOne.isEmpty());
     }
 
+    @Test
+    public void testIfContainsWorks(){
+        assertTrue(kitchenWithOne.contains("blue corn"));
+        assertFalse(kitchenWithOne.contains("yellow corn"));
+    }
+
+    @Test
+    public void testIfSizeWorks(){
+        assertEquals(0 , emptyKitchen.size());
+        assertEquals(1, kitchenWithOne.size());
+    }
+
 }
